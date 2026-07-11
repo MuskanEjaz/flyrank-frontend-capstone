@@ -4,6 +4,17 @@
 
 This repository contains the initial setup for my FlyRank Frontend AI Engineering capstone project. It documents the planned development stack, project conventions, and AI-assisted workflow before feature implementation begins.
 
+## Getting Started
+
+To set up the project locally, make sure Node.js and npm are installed, then run:
+
+1. `npm install`
+2. `npm run dev`
+3. `npm run test`
+4. `npm run build`
+
+These commands give another developer a clear starting point for installing dependencies, running the app locally, validating changes, and producing a production build.
+
 ## Planned Stack
 
 - React
