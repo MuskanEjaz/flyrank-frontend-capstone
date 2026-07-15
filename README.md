@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TaskFlow
 
-## Getting Started
+TaskFlow is a frontend capstone project for FE-04 focused on a polished task management experience. The app uses the Next.js App Router with server-rendered placeholder screens for a landing page, dashboard, tasks workspace, settings, and deployment health monitoring.
 
-First, run the development server:
+## Project purpose
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This project demonstrates a responsive, accessible, and deployment-aware frontend shell for a task management application without authentication or a database.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Route specification
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- `/` — professional landing page
+- `/dashboard` — dashboard with placeholder statistics and recent tasks
+- `/tasks` — task list placeholder
+- `/tasks/new` — create-task form placeholder
+- `/settings` — settings placeholder
+- `/health` — deployment health-check page
+- `/api/health` — JSON API returning status, application name, environment, and timestamp
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Local setup
 
-## Learn More
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Copy the environment example:
+   ```bash
+   cp .env.example .env.local
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open http://localhost:3000
 
-To learn more about Next.js, take a look at the following resources:
+## Environment variables
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `NEXT_PUBLIC_APP_URL` — base URL used by the health page and local development helpers. Default is `http://localhost:3000`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Health check details
 
-## Deploy on Vercel
+The `/health` route fetches `/api/health` and renders the deployment status. The app constructs the base URL from `VERCEL_URL` or `NEXT_PUBLIC_APP_URL`, with `http://localhost:3000` as the fallback.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Vercel deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Push the repository to GitHub.
+2. Import the project into Vercel.
+3. Set the environment variable `NEXT_PUBLIC_APP_URL` to the deployed production URL.
+4. Deploy the app and open the generated URL.
