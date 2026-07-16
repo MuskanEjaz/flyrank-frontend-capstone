@@ -51,3 +51,7 @@ The `/health` route fetches `/api/health` and renders the deployment status. The
 ## Milestone note: /empty-live
 
 The `/empty-live` route is a minimal public portfolio milestone page for Muskan Ejaz. It is intentionally near-blank, polished, and responsive, and it presents only the core identity text and a live status badge without extra navigation or filler content.
+
+## Automation workflow
+
+A transparent, reusable documentation workflow for turning rough project notes into credible portfolio case-study summaries is available in [automation-workflow](automation-workflow/).
