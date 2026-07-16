@@ -35,6 +35,7 @@ This project demonstrates a responsive, accessible, and deployment-aware fronten
 ## Environment variables
 
 - `NEXT_PUBLIC_APP_URL` — base URL used by the health page and local development helpers. Default is `http://localhost:3000`.
+- `ANTHROPIC_API_KEY` — optional. When present, the chat route uses Claude for live responses. When omitted, the route falls back to a deterministic local demo stream and the UI displays a "Demo streaming mode" badge.
 
 ## Health check details
 

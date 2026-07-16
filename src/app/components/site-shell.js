@@ -7,6 +7,7 @@ const navigation = [
   { href: "/", label: "Home" },
   { href: "/dashboard", label: "Dashboard" },
   { href: "/tasks", label: "Tasks" },
+  { href: "/ai-chat", label: "AI Chat" },
   { href: "/settings", label: "Settings" },
   { href: "/health", label: "Health" },
 ];
