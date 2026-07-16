@@ -47,3 +47,7 @@ The `/health` route fetches `/api/health` and renders the deployment status. The
 2. Import the project into Vercel.
 3. Set the environment variable `NEXT_PUBLIC_APP_URL` to the deployed production URL.
 4. Deploy the app and open the generated URL.
+
+## Milestone note: /empty-live
+
+The `/empty-live` route is a minimal public portfolio milestone page for Muskan Ejaz. It is intentionally near-blank, polished, and responsive, and it presents only the core identity text and a live status badge without extra navigation or filler content.

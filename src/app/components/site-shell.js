@@ -34,6 +34,19 @@ function NavLink({ href, label }) {
 }
 
 export default function SiteShell({ children }) {
+  const pathname = usePathname();
+  const isEmptyLiveRoute = pathname === "/empty-live";
+
+  if (isEmptyLiveRoute) {
+    return (
+      <div className="min-h-screen bg-[color:var(--background)] text-[color:var(--foreground)]">
+        <main className="mx-auto flex min-h-screen w-full max-w-7xl flex-col px-4 py-6 sm:px-6 lg:px-8 lg:py-8">
+          {children}
+        </main>
+      </div>
+    );
+  }
+
   return (
     <div className="flex min-h-screen flex-col bg-[color:var(--background)] text-[color:var(--foreground)]">
       <header className="border-b border-[color:var(--border)] bg-[color:var(--background)]/95 backdrop-blur">
