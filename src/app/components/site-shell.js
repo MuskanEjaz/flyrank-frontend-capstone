@@ -21,9 +21,9 @@ function NavLink({ href, label }) {
     <Link
       href={href}
       aria-current={isActive ? "page" : undefined}
-      className={`rounded-full px-3 py-2 text-sm font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--primary)] ${
+      className={`rounded-full px-3 py-2 text-sm font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white ${
         isActive
-          ? "bg-[color:var(--primary)] text-[color:var(--primary-foreground)] shadow-sm"
+          ? "solid-action bg-[color:var(--primary)] shadow-sm"
           : "text-slate-700 hover:bg-slate-100 hover:text-slate-900"
       }`}
     >
@@ -35,14 +35,14 @@ function NavLink({ href, label }) {
 export default function SiteShell({ children }) {
   return (
     <div className="flex min-h-screen flex-col bg-[color:var(--background)] text-[color:var(--foreground)]">
-      <header className="border-b border-[color:var(--border)] bg-[color:var(--card)]/95 backdrop-blur">
-        <div className="mx-auto flex w-full max-w-7xl flex-col gap-4 px-4 py-4 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+      <header className="border-b border-[color:var(--border)] bg-[color:var(--background)]/95 backdrop-blur">
+        <div className="mx-auto flex w-full max-w-7xl flex-col gap-4 px-4 py-5 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[color:var(--primary)]">
               TaskFlow
             </p>
-            <h1 className="text-xl font-semibold text-slate-900">
-              Project coordination, simplified
+            <h1 className="text-xl font-semibold text-[color:var(--foreground)]">
+              Structured delivery, quietly confident
             </h1>
           </div>
           <nav aria-label="Primary" className="flex flex-wrap gap-2">
@@ -53,7 +53,7 @@ export default function SiteShell({ children }) {
         </div>
       </header>
 
-      <main className="mx-auto flex w-full max-w-7xl flex-1 flex-col px-4 py-8 sm:px-6 lg:px-8">
+      <main className="mx-auto flex w-full max-w-7xl flex-1 flex-col px-4 py-8 sm:px-6 lg:px-8 lg:py-10">
         {children}
       </main>
 

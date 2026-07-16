@@ -25,13 +25,13 @@ async function HealthStatus() {
           <dt className="text-sm font-semibold uppercase tracking-[0.2em] text-[color:var(--muted)]">
             Application
           </dt>
-          <dd className="mt-2 text-lg font-semibold text-slate-900">{payload.applicationName}</dd>
+          <dd className="mt-2 text-lg font-semibold text-[color:var(--foreground)]">{payload.applicationName}</dd>
         </div>
         <div className="rounded-2xl border border-[color:var(--border)] bg-slate-50 p-4">
           <dt className="text-sm font-semibold uppercase tracking-[0.2em] text-[color:var(--muted)]">
             Environment
           </dt>
-          <dd className="mt-2 text-lg font-semibold text-slate-900">{payload.environment}</dd>
+          <dd className="mt-2 text-lg font-semibold text-[color:var(--foreground)]">{payload.environment}</dd>
         </div>
       </dl>
       <div className="rounded-2xl border border-[color:var(--border)] bg-white p-4 text-sm text-[color:var(--muted)]">
@@ -48,7 +48,7 @@ export default function HealthPage() {
         <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[color:var(--primary)]">
           Health
         </p>
-        <h2 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
+        <h2 className="text-3xl font-semibold tracking-tight text-[color:var(--foreground)] sm:text-4xl">
           Deployment health check.
         </h2>
         <p className="max-w-2xl text-lg text-[color:var(--muted)]">

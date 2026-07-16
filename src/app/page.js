@@ -14,17 +14,17 @@ export default function HomePage() {
           <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[color:var(--primary)]">
             TaskFlow Capstone
           </p>
-          <h2 className="text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl">
+          <h2 className="text-4xl font-semibold tracking-tight text-[color:var(--foreground)] sm:text-5xl">
             A polished task management experience for modern delivery teams.
           </h2>
-          <p className="max-w-2xl text-lg text-[color:var(--muted)]">
+          <p className="max-w-2xl text-lg leading-8 text-[color:var(--muted)]">
             This App Router skeleton showcases a professional landing page, dashboard, task workspace, settings, and deployment health views for the FE-04 capstone.
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/dashboard" className="rounded-full bg-[color:var(--primary)] px-5 py-2.5 text-sm font-semibold text-[color:var(--primary-foreground)] hover:opacity-90">
+            <Link href="/dashboard" className="solid-action rounded-full bg-[color:var(--primary)] px-5 py-2.5 text-sm font-semibold transition hover:opacity-90">
               Open dashboard
             </Link>
-            <Link href="/tasks/new" className="rounded-full border border-[color:var(--border)] px-5 py-2.5 text-sm font-semibold text-slate-700 hover:border-[color:var(--primary)] hover:text-[color:var(--primary)]">
+            <Link href="/tasks/new" className="rounded-full border border-[color:var(--border)] px-5 py-2.5 text-sm font-semibold text-[color:var(--muted)] transition hover:border-[color:var(--primary)] hover:text-[color:var(--primary)]">
               Create task
             </Link>
           </div>

@@ -5,7 +5,7 @@ export default function NewTaskPage() {
         <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[color:var(--primary)]">
           Create task
         </p>
-        <h2 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
+        <h2 className="text-3xl font-semibold tracking-tight text-[color:var(--foreground)] sm:text-4xl">
           Add a new task to the flow.
         </h2>
         <p className="max-w-2xl text-lg text-[color:var(--muted)]">
@@ -41,7 +41,7 @@ export default function NewTaskPage() {
           </label>
 
           <div className="flex flex-wrap gap-3">
-            <button type="submit" className="rounded-full bg-[color:var(--primary)] px-5 py-2.5 text-sm font-semibold text-[color:var(--primary-foreground)] hover:opacity-90">
+            <button type="submit" className="solid-action rounded-full bg-[color:var(--primary)] px-5 py-2.5 text-sm font-semibold hover:opacity-90">
               Save task
             </button>
             <button type="button" className="rounded-full border border-[color:var(--border)] px-5 py-2.5 text-sm font-semibold text-slate-700 hover:border-[color:var(--primary)] hover:text-[color:var(--primary)]">

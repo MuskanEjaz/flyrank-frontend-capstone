@@ -13,7 +13,7 @@ export default function TasksPage() {
         <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[color:var(--primary)]">
           Tasks
         </p>
-        <h2 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
+        <h2 className="text-3xl font-semibold tracking-tight text-[color:var(--foreground)] sm:text-4xl">
           Task management workspace.
         </h2>
         <p className="max-w-2xl text-lg text-[color:var(--muted)]">
@@ -24,10 +24,10 @@ export default function TasksPage() {
       <div className="card-surface section-block">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <h3 className="text-xl font-semibold text-slate-900">Current backlog</h3>
+            <h3 className="text-xl font-semibold text-[color:var(--foreground)]">Current backlog</h3>
             <p className="mt-1 text-sm text-[color:var(--muted)]">A polished placeholder for your future task experience.</p>
           </div>
-          <Link href="/tasks/new" className="inline-flex rounded-full bg-[color:var(--primary)] px-4 py-2 text-sm font-semibold text-[color:var(--primary-foreground)] hover:opacity-90">
+          <Link href="/tasks/new" className="solid-action inline-flex rounded-full bg-[color:var(--primary)] px-4 py-2 text-sm font-semibold hover:opacity-90">
             Create task
           </Link>
         </div>
@@ -38,7 +38,7 @@ export default function TasksPage() {
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[color:var(--primary)]">
                 {task.status}
               </p>
-              <h4 className="mt-3 text-lg font-semibold text-slate-900">{task.title}</h4>
+              <h4 className="mt-3 text-lg font-semibold text-[color:var(--foreground)]">{task.title}</h4>
               <p className="mt-2 text-sm text-[color:var(--muted)]">Owner: {task.owner}</p>
             </article>
           ))}
